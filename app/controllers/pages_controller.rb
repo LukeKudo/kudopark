@@ -6,5 +6,9 @@ class PagesController < ApplicationController
   end
 
   def signin
-  end	
+  end
+
+  def destroy
+  end
+  	
 end

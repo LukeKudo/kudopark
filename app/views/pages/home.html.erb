@@ -1,4 +1,12 @@
-<div class="jumbotron">
-	<h1>Welcome to my App!</h1>
-	<p>Click here to <%= link_to "Sign up", "#", class: "btn btn-primary btn-lg" %></p>
-</div>
+<% if !user_signed_in? %>
+	<div class="jumbotron">
+		<h1>Welcome to my App!</h1>
+		<p>Click here to <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %></p>
+	</div>
+<% else %>
+	<div class="jumbotron">
+		<h1>You are logged in</h1>
+		<p>This is a test.</p>
+		<p><%= link_to "Integrate with Kudo", "#", class: "btn btn-primary" %></p>
+<% end %>
+	</div>
