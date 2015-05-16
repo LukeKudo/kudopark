@@ -39,9 +39,8 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
-<<<<<<< HEAD
+
   # Required for Devise
-=======
->>>>>>> 99a15ce4d1841a13c45122c12b9b32c8fe809b7c
+
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 end

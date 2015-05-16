@@ -1,14 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
-<<<<<<< HEAD
+
   devise_for :admins
   root "pages#home"
   get "about" => "pages#about"
   get "signin" => "pages#signin"
-=======
-  root "pages#home"
-  get "about" => "pages#about"
-  get "admin" => "pages#admin"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -63,5 +60,5 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
->>>>>>> 99a15ce4d1841a13c45122c12b9b32c8fe809b7c
+
 end
