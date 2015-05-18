@@ -10,39 +10,20 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'devise', '~> 3.4.1'
 gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sdoc'
 gem 'bootstrap-sass'
 
 group :development, :test do
-  gem 'byebug'
   gem 'sqlite3'
-  gem 'web-console', '~> 2.0'
-  gem 'spring', '~> 1.3.5'
 end
 
 group :production do
-  gem 'pg',             '0.17.1'
-  gem 'rails_12factor', '0.0.2'
-
-gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'bootstrap-sass'
-gem 'devise', '~> 3.4.1'
-
-group :development, :test do
-	gem 'sqlite3'
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
-group :production do
-	gem 'pg', '0.17.1'
-	gem 'rails_12factor', '0.0.2'
+group :doc do
+  gem 'sdoc', require: false
 end
 
-group :development, :test do
-  
-  gem 'byebug'
-  gem 'web-console', '~> 2.0'
-  gem 'spring', '~> 1.3.5'
 
-end
-end
