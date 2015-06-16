@@ -4,11 +4,5 @@ class PagesController < ApplicationController
 
   def about
   end
-
-  def signin
-  end
-
-  def destroy
-  end
   
 end
